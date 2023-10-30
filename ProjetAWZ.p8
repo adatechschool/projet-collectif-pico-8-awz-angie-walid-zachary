@@ -87,7 +87,7 @@ function check(obj,dir,flag)
    return fget(block,flag)
  
  elseif dir=="down" then
-   block=mget(x,y+8)
+   block=mget(x/8,(y+8)/8)
    return fget(block,flag)
  end
  
