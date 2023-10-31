@@ -4,26 +4,26 @@ __lua__
 --player variable
 	score=0
 function _init()
-	player={
-		sp=1,
-		x=14,
-		y=90,
-		w=8,
-		h=8,
-		flp=false,
-		dx=0,
-		dy=0,
-		max_dx=2,
-		max_dy=3,
-		acc=0.5,
-		boost=4,
-		anim=0,
-		running=false,
-		jumping=false,
-		falling=false,
-		sliding=false,
-		landed=false,
-		ssboost
+ 	player={
+  		sp=1,
+  		x=14,
+  		y=90,
+  		w=8,
+  		h=8,
+	  	flp=false,
+	  	dx=0,
+	  	dy=0,
+	  	max_dx=2,
+	  	max_dy=3,
+  		acc=0.5,
+	  	boost=4,
+	  	anim=0,
+	  	running=false,
+	  	jumping=false,
+	  	falling=false,
+	  	sliding=false,
+	  	landed=false,
+	  	ssboost
 		}
 		
 		music(00)
@@ -298,7 +298,7 @@ function player_a()
 	     end
 	   end
 	 else --player idle
-	   if time()-player.anim>3 then
+	   if time()-player.anim>1 then
 	   	 player.anim=time()
 	   	 player.sp+=1
 	   	 if player.sp>2 then
